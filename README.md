@@ -1,6 +1,6 @@
 # Alyrata_introgression
 
-A collection of homemade scripts for different things. The aim of this project is lab documentation.
+A collection of homemade scripts for analysis of Arabidopsis lyrata genomics. The aim of this project is lab documentation.
 
 ### Twisst_scripts
 
@@ -22,9 +22,17 @@ Everything for genome assemblies. **Max\_depth** script for assembly coverage an
 
 **Update TAC 3** Added notebooks for TE and gene analysis. Added scripts for running GENESPACE (**prep_genespace.sh**, **run_genespace3.R**).
 
+**Update TAC 4** Added notebook for Pannagram analysis and a notebook of PSMC analysis + PSMC script. 
+
 ### centromeres
 
 **Update TAC 3** Notebooks with short-read centromere repeat analysis and repeat library analysis (including PCA). Script for mapping short reads on centromeric repeat is in **centr_mapper.sh**.
+
+**Update TAC 4** Adding the final big plot figure notebook. Adding short-read mapping script. Updating the PCA scripts.
+
+### A. lyrata resourse
+**resource.ipynb** - Notebook used for the A. lyrata resourse paper 
+Mapping and filtering scripts.
 
 ### Other files
 
@@ -35,4 +43,7 @@ Everything for genome assemblies. **Max\_depth** script for assembly coverage an
 **run_est_sfs.sh** - the data preparation and the command itself to make population SFS with est-sfs software.
 
 **pi_nt1.py** - Script to calculate Pi between NT1 and MN47.
+
+
+
 
