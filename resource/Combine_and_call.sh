@@ -12,6 +12,8 @@ gatk GenomicsDBImport --java-options "-Xmx100G" \
  --overwrite-existing-genomicsdb-workspace \
  --reader-threads 8  --genomicsdb-workspace-path Add_sc8
 
-gatk  --java-options "-Xmx235G" CombineGVCFs \
-    -R /biodata/dep_mercier/grp_novikova/A.Lyrata/ref/Alyrata/NT1_assembly/final_NT1/NT1_220222.fasta \
-    --variant  sample_nowilli.list  -L scaffold_2 -O Eur_lyrata_sc2.g.vcf.gz #sample_paths_cat.list
+#gatk  --java-options "-Xmx235G" CombineGVCFs \
+#    -R /biodata/dep_mercier/grp_novikova/A.Lyrata/ref/Alyrata/NT1_assembly/final_NT1/NT1_220222.fasta \
+#   --variant  sample_nowilli.list  -L scaffold_2 -O Eur_lyrata_sc2.g.vcf.gz #sample_paths_cat.list
+
+gatk --java-options "-Xmx85G -Xms78G -XX:ParallelGCThreads=8" GenotypeGVCFs -R /biodata/dep_mercier/grp_novikova/A.Lyrata/ref/Alyrata/NT1_assembly/final_NT1/NT1_220222.fasta -V gendb://Pollen_NT1NT8 --include-non-variant-sites -O Pollen_NT1NT8.vcf.gz
